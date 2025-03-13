@@ -1,0 +1,54 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+:root {
+  --dark-color: #181e1e;
+  --red-color: #e63946;
+  --pink-color:#ff6864;
+  --yellow-color:#ffca28;
+}
+
+
+/* *,
+*::after,
+*::before{
+  box-sizing: boder-box;
+} */
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  font-size: 16px;
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+  body {
+    font-size: 14px; /* Giảm kích thước font chữ cho thiết bị di động nhỏ hơn */
+    max-width: 100%;
+  }
+}
+
+
+
+img {
+  max-width: 100%; /* Hình ảnh sẽ không vượt quá kích thước của phần tử chứa nó */
+  height: auto; /* Giữ tỷ lệ chiều cao/chiều rộng của hình ảnh */
+}

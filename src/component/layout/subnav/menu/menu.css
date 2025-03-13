@@ -1,0 +1,33 @@
+/* .menu {
+    display: flex;
+    flex-direction: column; Chỉnh sửa định dạng thành dạng dọc
+    background: #f7ffe5;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100px;
+    max-height: 200px; Đặt chiều cao tối đa cho menu
+    overflow-y: auto; Cho phép cuộn khi nội dung quá dài
+    z-index: 100;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px; Khoảng cách giữa các mục menu
+  }
+  
+  .menu li:last-child {
+    margin-bottom: 0; Loại bỏ khoảng cách dưới cùng của mục menu cuối cùng
+  }
+  
+  .menu li a {
+    font-weight: 800;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: black;
+  }
+   */

@@ -1,0 +1,65 @@
+/* .subnav {
+    position:fixed;
+    top: 60px;
+    background: #F7FFE5;
+    border-top: 1px solid #ccc;
+    z-index: 200;
+ 
+} */
+
+.subnav-menu {
+    position:absolute;
+    top: 0px;
+    /* background: #F7FFE5; */
+    background-color: rgba(20,59,54,0.63);
+    color: #000; /* Màu chữ không trong suốt */
+    z-index: 200;
+    list-style: none;
+    padding: 5px;
+
+}
+
+
+
+.subnav-menu ul{
+    display:flex;
+    list-style: none;
+    padding: 0;
+    gap: 50px;
+    /* margin-left:20%; */
+    justify-content: center;
+}
+.subnav-menu ul li {
+    list-style: none;
+}
+.subnav-menu li {
+    margin-right: 50px;
+    
+}
+.subnav-menu li a {
+    font-weight: 800;
+    font-size: 16px;
+    font-family:Roboto, sans-serif;
+    color: black;
+}
+
+/* Thiết lập subnav menu cho các màn hình có chiều rộng nhỏ hơn hoặc bằng 768px */
+@media screen and (max-width: 768px) {
+    .subnav-menu {
+        position: relative; /* Đổi về vị trí mặc định để nằm trong luồng tài liệu */
+        background-color: rgba(20,59,54,0.63);
+         /* Đặt lại màu nền */
+        padding: 10px; /* Thêm khoảng trắng xung quanh các mục menu */
+    }
+
+    .subnav-menu ul {
+        flex-direction: column; /* Hiển thị menu theo chiều dọc */
+        gap: 20px; /* Khoảng cách giữa các mục menu */
+    }
+
+    .subnav-menu li {
+        margin-right: 0; /* Loại bỏ khoảng cách giữa các mục menu */
+    }
+}
+
+  

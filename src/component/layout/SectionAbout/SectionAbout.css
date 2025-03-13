@@ -1,0 +1,87 @@
+.about{
+    background-color: #143b36;
+    line-height: 1.6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.cot1{
+    width: 50%;
+    margin-left:5vw;
+}
+
+.cot1 span {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title-small{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #D69C52;
+    
+}
+
+.title-contain{
+    color:#fff;
+    font-size: 1.1em;
+
+}
+
+.cot2{
+    width: 50%;
+    margin-left: 6vw;
+}
+.cot2 img{
+    padding-top:2vw;
+    width: 80%; /* 50% chiều rộng của màn hình */
+    height: 80%; 
+    /* border-radius: 0 10px 0 10px; */
+}
+
+
+.about ::after, ::before{
+    box-sizing: border-box;
+}
+
+.cot2 {
+    overflow: hidden; /* Ẩn bất kỳ phần nào của hình ảnh nằm ngoài phạm vi của .cot2 */
+  }
+  
+  .cot2 img {
+    transition: transform 0.5s ease; /* Thêm hiệu ứng chuyển đổi 0.3s với độ mịn 'ease' */
+  }
+  
+  .cot2:hover img {
+    transform: scale(1.1); /* Kích thước hình ảnh tăng lên 1.2 lần khi hover vào .cot2 */
+  }
+
+@media screen and (max-width: 1023px){
+    .about{
+        background-color: #143b36;
+        line-height: 1.6;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .cot1{
+        width: 80%;
+       
+    }
+    .cot2{
+        width: 80%;
+        padding: 0 10vw 0 10vw;  
+    }
+}

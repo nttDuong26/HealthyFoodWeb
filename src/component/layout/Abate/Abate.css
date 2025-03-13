@@ -1,0 +1,73 @@
+.Abate{
+    display:flex;
+    justify-content: space-evenly;
+}
+.logo-abate{
+    width:20%;
+    margin: 2vw;
+}
+.Abate-form{
+    width: 35%;
+}
+
+.Orders-form1{
+    margin-top: 3vw;
+    
+}
+.Abate-title{
+    display:flex;
+    justify-content:space-between;
+}
+.Abate-title span{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.Abate-input{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    border: #ccc;
+    border-radius: 3px;
+   
+}
+
+.Abate-input input{
+    outline: none; 
+}
+
+.Abate-input input{
+    margin: 10px 0 10px 0;
+    width: 90%;
+    padding: 10px;
+
+}
+
+.Abate-input .ghichu{
+    height: 60px;
+    margin: 0.3vw;
+
+}
+
+.Abate-method-span{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.Abate-method{
+    margin-top: 20px;
+}
+
+.Abate-method-label{
+    margin: 20px 40px;
+}
+.ant-select-single {
+    font-size: 14px;
+    height: 40px;
+    margin: 0.6vw;
+}

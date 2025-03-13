@@ -1,0 +1,142 @@
+.FeaturedProducts{
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
+    background: #10302c;
+    display: block;
+}
+
+.FeaturedProducts-tieude{
+    /* background-color: #10302c; */
+    font-size: 48px;
+    line-height: 56px;
+    z-index: 9;
+    padding: 0;
+    margin: 0 0;
+    position: relative;
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    padding: 0 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FeaturedProducts-tieude img {
+    width: 45px;
+    height: 43px;
+    top: 50%;
+    margin: 0 5px;
+}
+
+.FeaturedProducts-tieude span{
+    color: #fff;
+    font-family: 'Calistoga', sans-serif;
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 20px;
+    /* margin-left: 32%; */
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.FeaturedProductsAll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+
+
+.FeaturedProducts-sp{
+    display:block;
+    text-align: center;
+    margin-bottom: 4%;
+    width: 230px;
+    height:300px;
+    /* margin-left: 12px; */
+    /* margin-right: 12px; */
+    transition: box-shadow 0.3s;
+    border: 1px solid #dcdcdc;
+    padding: 7px 7px 45px;
+    position: relative;
+    background-color: #e5e5e5;
+    box-shadow: 4px 4px #acacac;
+    /* margin-bottom: 25px; */
+}
+
+.FeaturedProducts-sp img{
+    display:block;
+   border-style: none;
+   max-width: 80%;
+   height: auto;
+   margin: 25px 30px 25px 25px
+}
+
+.FeaturedProductsGia{
+    color:#d83a3a;
+}
+
+.FeaturedProductsXem button{
+    position:absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    border:#d69c52;
+    background-color: #d69c52;
+    line-height: 38px;
+    padding: 0px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: 0 3px #a37b44;
+    min-width: 110px;
+    z-index: 10;
+}
+
+.FeaturedProductsXem button:hover{
+    background-color: #ae7a37;
+    cursor: pointer;
+}
+
+.FeaturedProductsHinh{
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Màu nền mờ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Ban đầu ẩn overlay */
+    transform: scale(0.8); /* Ban đầu overlay nhỏ đi một chút */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .FeaturedProductsHinh:hover .overlay {
+    opacity: 1; /* Hiển thị overlay khi hover */
+    transform: scale(1);
+  }
+  
+  .cartIcon {
+    font-size: 36px;
+    color: #fff;
+    background-color: #d69c52; /* Màu nền của nút tròn */
+    border-radius: 50%; /* Border radius 50% tạo thành nút tròn */
+    padding: 10px; /* Kích thước padding để tạo kích thước nút tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Biến con trỏ thành pointer khi di chuột qua nút */
+    transition: background-color 0.3s ease;
+  }
+  

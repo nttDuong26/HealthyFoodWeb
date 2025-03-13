@@ -1,0 +1,24 @@
+.sort-by {
+    position:absolute;
+    top: 20%;
+    transform: translate(-50%, 10%);
+    background-color: white;
+    z-index:200 ;
+}
+
+.sort-by ul{
+    list-style: none;
+    padding-right: 25px;
+    width:100px;
+}
+
+.sort-by li{
+    padding-bottom: 10px;
+
+}
+/* .sortBy  :hover{
+    background-color:#d69c52;
+} */
+.sort-by a{
+    color: black;
+}

@@ -1,0 +1,38 @@
+.AcountForm{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+    background-color: #fff;
+}
+
+.AcountFormDN-tt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding:10px 10px 5px 10px;
+    border-bottom: 1px solid #ccc;
+    /* margin: 2px 10px; */
+    color:black;
+}
+
+.AcountFormDN :hover{
+    background-color: #dfdada;
+}
+
+.AcountFormDK-tt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding:5px 10px 10px 10px;
+    color:black;
+}
+
+.AcountFormDK :hover{
+    background-color: #dfdada;
+}

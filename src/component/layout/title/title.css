@@ -1,0 +1,100 @@
+.center-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+.shopname {
+    text-align: center;
+    position: absolute; /* Định vị tuyệt đối */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Dịch chuyển vị trí */
+    color:#fff;
+
+}
+
+.shopname span{
+    display:block;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.name{
+    font-size: 50px;
+    font-weight: 800;
+    font-size: 4vw;
+
+}
+
+.slogan{
+    margin-top: 5px;
+}
+
+.time{
+    margin-top: 7px;
+}
+.shopname button{
+    margin-top: 5px;
+    /* box-shadow: none; */
+    border-radius: 12px;
+    border-color: #D69C52;
+    padding: 10px;
+    background-color: #D69C52;
+    color:#fff;
+}
+
+.shopname button:hover{
+    cursor:pointer;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInFromButtom {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .name {
+    animation: slideInFromLeft 1s ease forwards;
+  }
+  
+  .time {
+    animation: slideInFromRight 1s ease forwards;
+  }
+  .slogan {
+    animation: slideInFromTop 1s ease forwards;
+  }
+  
+  .slogan2 {
+    animation: slideInFromButtom 1s ease forwards;
+  }
+  

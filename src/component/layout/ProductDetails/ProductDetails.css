@@ -1,0 +1,265 @@
+.ProductDetails-nav{
+    background-color:#143b36 ;
+    position:sticky;
+    top:0;
+    z-index: 100;
+}
+
+.ProductDetails-content{
+    background-color: #143b36;
+    display:flex;
+}
+
+.ProductDetails-inf{
+    display:block;
+    margin: 8vw;
+}
+
+.ProductDetails-title{
+    color:aliceblue;
+}
+
+.soluong-mon span{
+    color: #fff;
+}
+.ProductDetails-content{
+    padding: 2vw 2vw 0 8vw;
+}
+.ProductDetails-title{
+    margin-bottom: 20px;
+}
+
+.soluong-mon{
+    margin-bottom: 20px;
+}
+.soluong-monbtn{
+    display:flex;
+}
+.soluong-mon span{
+    display:block;
+    margin-bottom:10px;
+}
+
+.item-pic1{
+    width: 20%;
+    height: 20%;
+    margin-right: 5px;
+}
+
+.ProductDetails-item{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#fff;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: solid 1px #fff;
+}
+
+.ProductDetails-itemend{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#fff;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.ProductDetails-right{
+    border: solid 1px #d69c52;
+    width: 25%;
+    margin-left: 100px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.ProductDetails-right-title{
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    background: #d69c52;
+    color: #fff;
+    padding: 10px 17px;
+    text-transform: uppercase;
+    border-radius: 8px 8px 0 0;
+}
+
+.ProductDetails-right ul li :hover{
+    color:#d69c52;
+    cursor:pointer;
+}
+
+/* .soluong-mon input {
+    width:20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border:none;
+} */
+
+.soluong-mon button{
+    /* width: 3vw;
+
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d69c52;
+    border:none; */
+    font-size: 20px;
+    line-height: 0px;
+    border: solid 1px #d69c52;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #d69c52;
+    /* float: left; */
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    border-radius: 5px;
+
+}
+.soluong-mon input {
+    /* width: 2vw;
+    height: 2vw;
+
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10%;
+    border: none; */
+    padding: 0 2px;
+    text-align: center;
+    margin: 0px;
+    display: block;
+    /* float: left; */
+    height: 25px;
+    border: solid 1px #d69c52;
+    width: 40px;
+    text-align: center;
+    box-shadow: none;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+        margin: 0 1vw;
+}
+.ten-mon{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 48px;
+    font-family: 'Dancing Script', cursive;
+    color:#fff;
+
+}
+
+.ten-monan{
+    font-size:3vw;;
+    font-weight: 500;
+    line-height: 48px;
+    font-family: 'Dancing Script', cursive;
+    color:#d69c52;
+}
+.ProductDetails-btn{
+    margin-top: 4vw;
+
+}
+.ProductDetails-btn button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d69c52;
+    border:none;
+    margin-bottom: 2vw;
+}
+.ProductDetails-btn :hover{
+    background-color: #bf7f2b;
+    cursor: pointer;
+}
+.them-giohang{
+    margin-right: 20px;
+    color:#fff;
+}
+.them-giohang :hover{
+    background-color: #bf7f2b;
+    cursor: pointer;
+}
+.ProductDetails-btn .muangay{
+    background-color: #d83a3a;
+    color:#fff;
+}
+
+.muangay:hover{
+    background-color: #a31d1d;
+    cursor: pointer;
+
+}
+
+.gia-mon{
+    color:#bf7f2b;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8rem;
+}
+.ProductDetails-Mota{
+    background-color: #143b36;
+}
+.Mota{
+    color:#bf7f2b;
+    border-bottom: 1px solid #bf7f2b;
+    
+    
+}
+
+.ant-image-mask{
+    width: 100%;
+    height: auto;
+}
+
+
+.Mota-title{
+    text-align: center;
+    padding: 2% 0;
+}
+
+.Mota-content{
+    color:#fff;
+    padding: 20px 50px;
+}
+.shopCart-tbl-headMB table {
+    padding: 6vw 6vw 2vw 6vw;
+}
+
+
+.ProductDetailsLeft{
+    display:flex;
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 767px){
+    .ProductDetailsLeft{
+        display:flex;
+        flex-direction: column;
+    }
+    .ProductDetails-content {
+        padding: 15vw 10vw 0 10vw;
+    }
+    .ten-monan{
+        font-size:5vw;;
+        font-weight: 500;
+        line-height: 48px;
+        font-family: 'Dancing Script', cursive;
+        color:#d69c52;
+    }
+    .ProductDetails-inf{
+        display:block;
+    }
+
+}

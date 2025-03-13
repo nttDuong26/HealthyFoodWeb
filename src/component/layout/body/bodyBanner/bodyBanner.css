@@ -1,0 +1,160 @@
+/* .bodyBanner {
+    background: #143b36;
+    display: block;
+
+}
+
+.bodyBannerPic {
+    background-color: #143b36;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    padding: 1vw; 
+}
+
+.bodyBanner-pic {
+    padding: 60px;
+}
+
+.bodyBanner-pic1 {
+    padding: 40px;
+    margin-right: 80px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .bodyBanner-pic {
+        padding: 20px; 
+    }
+
+    .bodyBanner-pic1 {
+        padding: 20px;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .bodyBannerPic{
+        display:flex;
+        overflow-x: scroll;
+    }
+} */
+
+.section_banner {
+    padding: 20px 0 0 0;
+    background-color: #10302c;
+    /* width: 95%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.row_banner{
+    display: flex;
+
+    /* flex-wrap: wrap; */
+}
+
+.content {
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    padding: 10px;
+    background: rgba(13,17,21,0.9);
+    color: #fff;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transform: scale(0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* .title1 {
+    color:#d69c52;
+  } */
+  .title2 {
+    color: #d69c52;
+  }
+  
+  .banner:hover .content {
+    opacity: 1; /* Hiển thị overlay khi hover */
+    transform: scale(1.1); /* Phóng to overlay khi hover (scale 110%) */
+  }
+  
+
+
+.banner {
+    width: 55%; /* Đặt chiều rộng của mỗi hình ảnh thành 45% để chúng hiển thị trên cùng một dòng */
+    margin: 2.5%; 
+    position: relative; 
+}
+
+/* .banner img {
+    width: 80%;
+} */
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 1023px){
+    .row_banner {
+        flex-wrap: wrap;
+        /* padding-right: 2vw; */
+    }
+
+    .banner {
+        width: 45%; /* Đặt chiều rộng của mỗi hình ảnh thành 45% để chúng hiển thị trên cùng một dòng */
+        margin: 2.5%; /* Đặt margin để tạo khoảng trống giữa các hình ảnh */
+        position: relative; 
+    }
+    .content {
+        margin: auto;
+        position: absolute;
+        z-index: 10;
+        opacity: 0;
+        padding: 10px;
+        background: rgba(13,17,21,0.9);
+        color: #fff;
+        display: inline-block;
+        transition: all 0.5s ease-in-out;
+        left: 30px;
+        right: 30px;
+        top: 30px;
+        bottom: 30px;
+        transform: scale(0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      /* .title1 {
+        color:#d69c52;
+      } */
+      .title2 {
+        color: #d69c52;
+      }
+      
+      .banner:hover .content {
+        opacity: 1; /* Hiển thị overlay khi hover */
+        transform: scale(1.1); /* Phóng to overlay khi hover (scale 110%) */
+      }
+      
+
+    .banner img {
+        width: 100%; /* Đặt chiều rộng của hình ảnh thành 100% để nó điền vào phần tử cha (.banner) */
+    }
+}

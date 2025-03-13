@@ -1,0 +1,39 @@
+.searchForm{
+    display:flex;
+    border: 1px solid #131212;
+    border-radius: 5px;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.searchForm-title{
+    border-bottom: 1px solid #8a8787;
+    padding: 10px;
+}
+
+.searchForm-title span{
+    color:black;
+}
+.searchForm-input{
+    margin-top: 15px;
+    display:flex;
+    border: 1px solid #d69c52;
+    border-radius: 5px;
+}
+
+.timkiem{
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none; 
+}
+.searchForm-icon{
+    border: #ccc;
+    background-color: #fff;
+    border-radius: 0px 5px 5px 0;
+}
+
+.searchForm-icon :hover{
+    cursor: pointer;
+}

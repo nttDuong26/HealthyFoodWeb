@@ -1,0 +1,36 @@
+.menuContent{
+    border: 1px solid #d69c52;
+    background-color: #1d2124;
+    width: 60%;
+}
+
+.AllMenu{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.AllMenu ul li{
+    list-style: none;
+    padding:10px;
+}
+
+.AllMenu .khaivi, .AllMenu .monchinh, .AllMenu .trangmieng, .AllMenu .douong {
+    color:#d69c52;
+    font-size:20px ;
+    font-weight: 700;
+}
+
+.khaivi:hover, .monchinh:hover, .trangmieng:hover, .douong:hover{
+    color:#b58331;
+    cursor: pointer;
+}
+
+.mc1 a, .kv1 a, .TM1 a, .DU1  a{
+    color:#fff;
+}
+
+.mc1 a:hover, .kv1 a:hover, .TM1 a:hover, .DU1  a:hover{
+    color:#d69c52;
+}

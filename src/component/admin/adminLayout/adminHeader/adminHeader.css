@@ -1,0 +1,11 @@
+.AdHeader{
+    /* background-color: rgb(20, 59, 54); */
+    padding:  1vw 0 ; 
+    /* height: 2vw; */
+    display: flex;
+    justify-content:center;
+}
+.logo-headerAd img{
+    height: 4vw;
+    
+}

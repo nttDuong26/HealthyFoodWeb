@@ -1,0 +1,32 @@
+.CartForm{
+    /* display: flex; */
+    /* flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center; */
+    border: 1px solid #fff;
+    width: 25vw;
+    border-radius: 5px;
+    background-color: #fff;
+    max-height: 200px; /* Set a maximum height for the CartForm container */
+    overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+    padding: 1vw; 
+
+}
+
+.CartForm span{
+    color: #2b2929;
+
+
+}
+.cartForm-Icon{
+    color:black;
+}
+
+.CartForminf{
+    color:black;
+    
+}
+.tableCart-inf{
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,184 @@
+.login-link{
+    background-color: #071513;
+    z-index: 0;
+    position:fixed;
+    top: 80px;
+    width: 100%;
+    
+
+}
+
+
+/* .login-content{
+    background-color: #143b36;
+    text-align: center;
+    justify-content: center;
+    margin-top:auto;
+    padding:150px;
+
+} */
+
+
+.login-form.login_re {
+    /* width: 30%; */
+    text-align: center;
+    background-color:rgba(255,255,255,0.06);;
+    border-radius: 10px;
+    /* margin-left: 35%; */
+    padding: 20px 30px 30px 30px;
+
+    position: relative;
+
+}
+
+
+/* .login-form{
+    background-color: #333;
+
+} */
+
+.login-form-title{
+    margin-top: 20px;
+}
+
+.login-form-title span{
+    color:#fff;
+    font-size: 26px !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+/* .login-form-input input, button{
+    margin-top: 20px;
+} */
+
+.signin-form{
+    margin: 70px;
+    font-family: Arial, sans-serif;
+}
+
+
+.signin-input{
+    position:relative;
+    width: 100%;
+    height: 40px;
+    border: solid 1px #ccc;
+    margin-top: 12px;
+    border-radius: 15px;
+    padding-right: 30px;
+}
+.sigin-btn{
+    margin: 10px;
+    text-align:center;
+}
+
+.sigin-btn_btn:hover{
+    background-color: rgb(212, 106, 106);
+}
+.sigin_in button{
+    color: #fff;
+    background: #d69c52;
+    border: none;
+    font-size: 16px;
+    line-height: 42px;
+    height: 45px;
+    border-radius: 4px;
+
+}
+
+.signin-group{
+    display:flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+.sigin_in{
+    width: 100%;
+}
+
+.sigin_in button{
+    width: 100%;
+}
+
+.signin-group input{
+    width: 100%;
+    border-radius: 4px;
+    height: 45px;
+    font-size: 15px;
+    border: 1px solid #e6e6e6;
+    border-bottom: 2px solid #d69c52;
+    padding: 1px ;
+    margin-bottom: 15px;
+
+}
+
+
+.signin-line__line{
+    display: flex;
+    align-items: center;
+    --text-divider-gap: 1rem;
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+.signin-line__line::before,
+.signin-line__line::after {
+    content: '';
+    height: 1px;
+    background-color:#071513 ;
+    flex-grow: 1;
+}
+.signin-line__line::before {
+    margin-right: var(--text-divider-gap);
+}
+.signin-line__line::after {
+    margin-left: var(--text-divider-gap);
+}
+.signin-form__social{
+    display:flex;
+    /* background-color: rgb(41, 41, 151); */
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+.signin__social-f{
+    color:white;
+    background-color: rgb(41, 41, 151);
+    padding:5px 10px;
+    border-radius: 4px;
+}
+
+.signin-form__social-f:hover{
+    background-color:rgb(116, 116, 216);
+}
+
+.signin__social-g{
+    color:black;
+    background-color: #F5EFE6;
+    padding:5px 10px;
+    border-radius: 4px;
+}
+.signin-form__social-g:hover{
+    background-color:rgba(224, 224, 241, 0.548);
+}
+
+.input-container {
+    position: relative;
+}
+  
+.signin-input {
+    padding-right: 30px; /* Để tạo khoảng trống bên phải để icon hiển thị */
+}
+  
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Điều chỉnh khoảng cách từ phải sang trái */
+    transform: translateY(-50%);
+}
+
+.icon :hover{
+    cursor: pointer;
+}

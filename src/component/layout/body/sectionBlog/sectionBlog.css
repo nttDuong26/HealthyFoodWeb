@@ -1,0 +1,147 @@
+.sectionBlog {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background: #143b36;
+    display: block;
+   
+
+    
+}
+
+.sectionBlog-title{
+    background-color: #143b36;
+    font-size: 4vw;
+    line-height: 7vw;
+    z-index: 9;
+    padding: 0;
+    margin: 0 0;
+    position: relative;
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    padding: 0 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sectionBlog-title span{
+    color: #fff;
+    font-family: 'Calistoga', sans-serif;
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 20px;
+    /* margin-left: 32%; */
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+
+.sectionBlog-title img{
+    width: 4vw;
+    height: 4vw;
+    top: 50%;
+    margin: 0 5px;
+}
+
+
+
+.sectionBlog-cart{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.time-post{
+    color:#d69c52;
+}
+
+.item-blog{
+    background-color: black;
+    border-radius: 5%;
+
+}
+.item-blog .block-content h3 a:hover{
+    color: #d69c52;
+
+}
+.loadedBlog{
+    border-radius: 5% 5% 0 0;
+    
+}
+.loadedBlog2{
+    border-radius: 0 0 5% 5%;
+    
+}
+.item-blog .block-content h3 a {
+    color: #fff;
+}
+.line-clamp-2{
+    color: #fff;
+
+}
+.button-text{
+    color: #d69c52;
+
+}
+.block-content{
+    padding: 2vw;
+}
+.swiper-slide {
+    transition-property: transform;
+}
+
+.sectionBlogContent{
+    display: flex;
+    /* padding: 0 3vw 0 3vw; */
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sectionBlogContent_Tablet{
+    display:none;
+}
+
+@media screen and (max-width: 1023px){
+    .sectionBlogContent_Tablet{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .sectionBlogContent{
+        display:none;
+    }
+    .sectionBlog-content1:first-child {
+        padding-top:5vw ;
+        /* padding: 5vw 0 0 0px; */
+
+    }
+    /* .sectionBlogContent1{
+        padding-left: 40px;
+
+    } */
+
+}
+
+@media screen and (max-width: 768px){
+    .sectionBlogContent_Tablet{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .sectionBlogContent{
+        display:none;
+    }
+    .sectionBlog-content1:last-child {    
+        padding: 5vw 0 0 0px;
+    }
+    .sectionBlog-content1:first-child {    
+        padding-left: 33px;
+
+    }
+
+}

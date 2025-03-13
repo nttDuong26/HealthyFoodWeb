@@ -1,0 +1,46 @@
+/* .tenNDprofile {
+   
+    color: #d69c52;
+} */
+.profileinf{
+    width: 40%; 
+    /* background-color: rgba(255,255,255,0.06); */
+    border-radius: 10px;
+    /* margin-left: 35%; */
+    /* padding: 10px 30px 30px 30px; */
+    position: relative;
+    color: #fff;
+}
+.tenNDprofile {
+    display: flex;
+    align-items: center; /* Dọc theo trục chính */
+    justify-content: space-between
+
+}
+
+.tenNDprofile div {
+    margin-right: 10px; /* Khoảng cách giữa tên người dùng và nút chỉnh sửa */
+}
+
+.tenNDprofile button {
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+    background-color: transparent; /* Màu nền trong suốt */
+    border: none; /* Loại bỏ viền */
+    text-decoration: underline; /* Thêm gạch dưới */
+    cursor: pointer; /* Hiển thị icon con trỏ khi di chuột qua nút */
+    color: #fff;
+
+}
+
+.profileinf button{
+    margin-right: 10px; /* Khoảng cách giữa các nút */
+    background-color: transparent; /* Màu nền trong suốt */
+    border: none; /* Loại bỏ viền */
+    text-decoration: underline; /* Thêm gạch dưới */
+    cursor: pointer; /* Hiển thị icon con trỏ khi di chuột qua nút */
+    color: #fff;
+}
+
+.ant-input:hover{
+    border-color: #d69c52;
+}

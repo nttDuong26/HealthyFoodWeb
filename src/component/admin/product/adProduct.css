@@ -1,0 +1,81 @@
+.adProductgia input{
+    box-sizing: border-box;
+    /* margin: 0 0 6vw; */
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14px;
+    line-height: 1.5714285714285714;
+    list-style: none;
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-width: 0;
+    background-color: #ffffff;
+    background-image: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+/* .adProductgia{
+    display:flex;
+
+} */
+
+#tenSP::placeholder {
+    color: rgb(138, 134, 134); /* Đặt màu chữ cho placeholder ở đây */
+  }
+  
+  #motaSP{
+    height: 5vw;
+  }
+  #motaSP::placeholder {
+    color: rgb(138, 134, 134); /* Đặt màu chữ cho placeholder ở đây */
+  }
+  .adProductgia-Tt{
+    display:flex;
+    margin-top: 1.3vw;
+  }
+
+  .adProductgia{
+    display:flex;
+    flex-direction: column;
+  }
+
+  #trangthai{
+    display:flex;
+    flex-direction: column;
+  }
+  .TT_IPvaSP{
+    display:flex;
+  }
+
+  #nguyenlieu::placeholder {
+    color: rgb(138, 134, 134); /* Đặt màu chữ cho placeholder ở đây */
+  }
+  #nguyenlieu{
+    height: 5vw;
+  }
+  .dinhduong input{
+    box-sizing: border-box;
+    margin: 0 2vw 0 0 ;
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14px;
+    line-height: 1.5714285714285714;
+    list-style: none;
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    min-width: 0;
+    background-color: #ffffff;
+    background-image: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
