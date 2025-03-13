@@ -1,17 +1,31 @@
-const { ProductCategories, Product, ProductRelation } = require("../model/model");
+const {  Product } = require("../model/modelProduct");
+const {  ProductCategories } = require("../model/modelCategory");
+const Image = require("../model/modelImage");
+const upload = require('../middleware/imageMiddelware');
+
 
 const ProductCategoriesController = {
     // ADD ProductCategories
     addProductCategories: async (req, res) => {
         try {
+            const newImage = new Image({
+                name: req.file.originalname,
+                url: req.file.originalname
+            });
+
+            const savedImage = await newImage.save();
+            // console.log(savedImage);
+
             const { tenDM } = req.body;
             const productIds = req.body.product;
             const product = await Product.find({ _id: { $in: productIds } });
-
+            const hinhanhDM = savedImage._id;
+               
             // Tạo danh mục và liên kết với sản phẩm
             const addProductCategories = new ProductCategories({
-                ...req.body,
-                product: product
+                hinhanhDM: savedImage._id,
+                tenDM,
+                product: product,
             });
             //Lưu danh mục vào CSDL
             const saveProductCategories = await addProductCategories.save();
@@ -40,7 +54,7 @@ const ProductCategoriesController = {
     //GET ONE ProductCategories
     getOneProductCategories: async (req, res) => {
         try{
-            const OneProductCategories = await ProductCategories.findById(req.params.id);
+            const OneProductCategories = await ProductCategories.findById(req.params.id)
            if (!OneProductCategories){
             return res.status(404).json({error: 'Danh mục không tồn tại'})
            }
@@ -56,15 +70,21 @@ const ProductCategoriesController = {
     updateProductCategories: async (req, res) => {
         try {
             const categoryId = req.params.id; // Lấy ID của danh mục cần cập nhật từ URL
-            const { tenDM, product } = req.body; // Lấy thông tin danh mục và danh sách ID sản phẩm từ request body
+            const { tenDM, product, hinhanhDM } = req.body; // Lấy thông tin danh mục và danh sách ID sản phẩm từ request body
         
             const existingCategory = await ProductCategories.findById(categoryId); // Tìm danh mục cần cập nhật dựa trên ID
             if (!existingCategory) {
                 return res.status(404).json({ error: 'Không tìm thấy danh mục sản phẩm' });
             }
-    
+            const newImage = new Image({
+                name: req.file.originalname,
+                url: req.file.originalname
+            });
+            
+            const savedImage = await newImage.save();
             // Cập nhật thông tin của danh mục
             existingCategory.tenDM = tenDM;
+            existingCategory.hinhanhDM = savedImage._id;
     
             // Lấy danh sách sản phẩm cũ của danh mục
             const oldProducts = existingCategory.product;

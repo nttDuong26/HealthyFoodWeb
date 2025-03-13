@@ -1,19 +1,49 @@
-const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken')
+const dotenv = require('dotenv')
+dotenv.config()
 
-module.exports = function (req, res, next) {
-  const token = req.header('Authorization');
+const authMiddleWare = (req, res, next) => {
+    const token = req.headers.token.split(' ')[1]
+    jwt.verify(token, accessToken, function (err, user) {
+        if (err) {
+            return res.status(404).json({
+                message: 'The authemtication',
+                status: 'ERROR'
+            })
+        }
+        if (user?.isAdmin) {
+            next()
+        } else {
+            return res.status(404).json({
+                message: 'The authemtication',
+                status: 'ERROR'
+            })
+        }
+    });
+}
 
-  if (!token || !token.startsWith('Bearer ')) {
-    return res.status(401).json({ message: 'Token không hợp lệ' });
-  }
+const authUserMiddleWare = (req, res, next) => {
+    const token = req.headers.token.split(' ')[1]
+    const userId = req.params.id
+    jwt.verify(token, accessToken, function (err, user) {
+        if (err) {
+            return res.status(404).json({
+                message: 'The authemtication',
+                status: 'ERROR'
+            })
+        }
+        if (user?.isAdmin || user?.id === userId) {
+            next()
+        } else {
+            return res.status(404).json({
+                message: 'The authemtication',
+                status: 'ERROR'
+            })
+        }
+    });
+}
 
-  const rawToken = token.split(' ')[1];
-
-  jwt.verify(rawToken, process.env.JWT_SECRET, (error, decodedToken) => {
-    if (error) {
-      return res.status(401).json({ message: 'Token không hợp lệ', error: error.message });
-    }
-    req.user = decodedToken.user;
-    next();
-  });
-};
+module.exports = {
+    authMiddleWare,
+    authUserMiddleWare
+}

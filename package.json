@@ -22,17 +22,33 @@
   },
   "homepage": "https://github.com/nttDuong2511/nodejs_Webmeal_BE#readme",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^1.6.0",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
+    "config": "^3.3.9",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "dateformat": "^3.0.3",
+    "decision-tree": "^0.3.7",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^7.4.2",
+    "m": "^1.8.9",
+    "ml": "^6.0.0",
+    "moment": "^2.29.4",
+    "momo-sdk": "^0.1.0",
+    "mongoose": "^7.6.3",
+    "multer": "^1.4.5-lts.1",
+    "pdfkit": "^0.13.0",
+    "random-forest": "^0.0.7",
+    "scikit-learn": "^0.1.0",
     "validator": "^13.11.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
     "morgan": "^1.10.0"
   }
 }

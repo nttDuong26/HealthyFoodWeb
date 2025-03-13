@@ -26,8 +26,27 @@ router.get('/getuserItem/:id', UserController.getUserItem);
 router.delete('/deleteuser/:id', UserController.deleteUser);
 
 
+//Thống kê người dùng theo tuần
+router.get ('/countUsers/week/:week/:year', UserController.getUserStatsWeekly);
+
+//Thống kê người dùng 5 tuần gần nháa
+router.get ('/countUsers/recentWeeks', UserController.getUserStatsLastWeeks);
+
+//Thống kê người dùng theo tháng
+router.get ('/countUsers/month/:month', UserController.getUserStatsMonthly);
+
+//Thống kê người dùng theo năm
+router.get ('/countUsers/year/:year', UserController.getUserStatsYearly);
+
+router.post ('/calculate', UserController.calculateUser)
 //Đăng xuất
 router.post('/logout', UserController.Logout);
+
+//Gợi ý món ăn
+router.post('/recoment', UserController.suggestMealCombos);
+
+router.post("/usertotalCount", UserController.countTotalUser);
+
 
 
 

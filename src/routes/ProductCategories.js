@@ -1,9 +1,11 @@
 const ProductCategoriesController = require("../controller/ProductCategoriesController");
 const router = require("express").Router();
+const upload = require('../middleware/imageMiddelware');
+
 
 //ADD ProductCategories
 
-router.post("/ad", ProductCategoriesController.addProductCategories );
+router.post("/ad", upload.single('file'), ProductCategoriesController.addProductCategories );
 
 //GET ProductCategories
 
